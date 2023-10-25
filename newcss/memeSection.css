@@ -1,0 +1,86 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
+
+/* Colors */
+:root {
+  --primary: #eebf00;
+  --secondary: #232b38;
+  --ternary: #6c6c6c;
+  --danger: #fe4545;
+  --pure: #fefefe;
+  --light: #f0f0f0;
+  --heaven: #ffff;
+  --footer: #2d333f;
+  --bg-heading: #333;
+  --text-heading: #fff;
+  --bg-section: #f5f5f5;
+  --text-section: #333;
+  --bg-gallery: #fff;
+}
+
+/* General Styles */
+body {
+  font-family: "Raleway", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--heaven);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Responsive Container */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1152px;
+  }
+}
+
+/* Page Heading */
+header.top-bar {
+  background: var(--primary);
+  color: var(--text-heading);
+  font-family: "Raleway", sans-serif;
+  padding: 0.75rem 0;
+}
+
+/* Meme Section Styles */
+.meme-section {
+  background-color: var(--bg-section);
+  padding: 2rem 0;
+}
+
+
+
+.btn {
+  background-color: var(--primary);
+  color: var(--pure);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  /* width: 10%;  */
+}
+.btn:hover{
+  background-color: var(--secondary);
+}

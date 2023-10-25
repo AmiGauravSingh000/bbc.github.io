@@ -1,0 +1,263 @@
+/* Fonts */
+@font-face {
+    font-family: Raleway_regular;
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: Raleway_medium;
+    src: url(../fonts/Raleway-Medium.ttf);
+}
+
+@font-face {
+    font-family: Raleway_bold;
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+    font-family: Raleway_semi_bold;
+    src: url(../fonts/Raleway-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Raleway_extre_bold;
+    src: url(../fonts/Raleway-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Raleway_black;
+    src: url(../fonts/Raleway-Black.ttf);
+}
+
+/* Colors */
+:root {
+    --primary: #EEBF00;
+    --secondary: #232B38;
+    --ternary: #6C6C6C;
+    --danger: #FE4545;
+    --pure: #FEFEFE;
+    --light: #F0F0F0;
+    --heaven: #FFFF;
+    --footer: #2D333F;
+}
+
+body {
+    font-family: 'Raleway_regular', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--heaven);
+}
+
+header {
+    background-color: var(--secondary);
+    color: var(--pure);
+    text-align: center;
+    padding: 0.75rem;
+    font-family: 'Raleway_semi_bold', Arial, sans-serif;
+}
+
+h1 {
+    margin: 0;
+    color: var(--pure);
+}
+
+.joke-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.joke-categories {
+    background-color: var(--heaven);
+    border: 1px solid var(--ternary);
+    padding: 20px;
+    width: 25%;
+    margin-right: 20px;
+    font-family: 'Raleway_regular', Arial, sans-serif;
+}
+
+.joke-categories h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: var(--secondary);
+}
+
+.joke-categories ul {
+    list-style: none;
+    padding: 0;
+}
+
+.joke-categories li {
+    margin: 10px 0;
+}
+
+.joke-categories a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.joke-content {
+    width: 75%;
+}
+
+.joke-of-the-day {
+    background-color: var(--heaven);
+    border: 1px solid var(--ternary);
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: 'Raleway_regular', Arial, sans-serif;
+}
+
+.joke-of-the-day h2 {
+    font-size: 1.5em;
+    color: var(--secondary);
+}
+
+.joke-list {
+    background-color: var(--heaven);
+    border: 1px solid var(--ternary);
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: 'Raleway_regular', Arial, sans-serif;
+}
+
+.joke-list h2 {
+    font-size: 1.5em;
+    color: var(--secondary);
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: var(--primary);
+    color: var(--pure);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.btn{
+    background-color: var(--primary);
+    color: var(--pure);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    /* width: 10%;  */
+}
+.btn:hover , .btn:focus{
+    background-color: var(--secondary);
+
+}
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: var(--secondary);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--heaven);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: var(--secondary);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: var(--light);
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+
+/* Styles for the new sections */
+.random-jokes,
+.category-jokes,
+.submit-joke {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.random-jokes h2,
+.category-jokes h2,
+.submit-joke h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.random-jokes .joke-list,
+.category-jokes .joke-list {
+    list-style: none;
+    padding: 0;
+}
+
+.random-jokes .joke-list li,
+.category-jokes .joke-list li {
+    margin: 10px 0;
+}
+
+.submit-joke form {
+    margin-top: 20px;
+}
+
+.submit-joke label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.submit-joke textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+.submit-joke button {
+    padding: 10px 20px;
+    background-color: #3498DB;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+/* Your existing CSS styles here... */
+
+/* Styles for the new sections */
+.additional-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.additional-section h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.additional-section p {
+    font-size: 1em;
+    color: #666;
+}

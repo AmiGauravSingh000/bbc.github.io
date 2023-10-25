@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newcss/jokeSection.css">
+    <title>Joke Section</title>
+</head>
+<body>
+    <header class="top_bar">
+        <div class="container flex justify-between items-center">
+            <h1>Jokes</h1>
+        </div>
+    </header>
+
+    <section class="joke-section">
+        <div class="joke-categories">
+            <h2>Categories</h2>
+            <div class="dropdown">
+                <button onclick="toggleCategoryDropdown()" class="dropbtn" id="category-button">Select a Category</button>
+                <div id="categoryDropdown" class="dropdown-content">
+                    <!-- Category links will be added here dynamically using JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <div class="joke-content">
+            <div class="joke-of-the-day">
+                <h2>Joke of the Day</h2>
+                <p id="joke-of-the-day">Loading joke...</p>
+            </div>
+
+            <div class="random-jokes">
+                <h2>Random Jokes</h2>
+                    <button class="btn" onclick="window.location.href = 'randomJokes.html';">Click Me</button>
+            </div>
+
+            <div class="category-jokes">
+                <h2>Category-Based Jokes</h2>
+                <ul class="joke-list">
+                    <li>Category Joke 1</li>
+                    <li>Category Joke 2</li>
+                    <li>Category Joke 3</li>
+                    <!-- More category-based jokes can be added here dynamically -->
+                </ul>
+            </div>
+
+            <div class="submit-joke">
+                <h2>Submit a Joke</h2>
+                <form>
+                    <label for="jokeText">Your Joke:</label>
+                    <textarea id="jokeText" name="jokeText" rows="4"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <!-- Additional Sections -->
+            <div class="additional-section">
+                <h2>Additional Section 1</h2>
+                <p>This is an additional section for more content.</p>
+            </div>
+
+            <div class="additional-section">
+                <h2>Additional Section 2</h2>
+                <p>You can add more sections like this as needed.</p>
+            </div>
+        </div>
+    </section>
+    <script src="js/jokeSection.js"></script>
+</body>
+</html>
